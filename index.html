@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desktop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="folder">
+      <a href="https://ethemkizilyer.github.io/Profile/">
+        <i class="fa-solid fa-folder-closed"
+          ><span class="isim">Dosya1</span></i
+        ></a
+      >
+      <a href="https://ethemkizilyer.github.io/Website/">
+        <i class="fa-solid fa-folder-closed"
+          ><span class="isim">Dosya2</span></i
+        ></a
+      >
+      <a href="https://ethemkizilyer.github.io/VoltranClub/">
+        <i class="fa-solid fa-folder-closed"
+          ><span class="isim">Dosya3</span></i
+        ></a
+      >
+      <a href="https://ethemkizilyer.github.io/form/">
+        <i class="fa-solid fa-folder-closed"
+          ><span class="isim">Dosya4</span></i
+        ></a
+      >
+      <a href="https://ethemkizilyer.github.io/Website1/">
+        <i class="fa-solid fa-folder-closed"
+          ><span class="isim">Dosya5</span></i
+        ></a
+      >
+      <a href="http://127.0.0.1:5500/ethem%20copy%202.html">
+        <i class="fa-solid fa-folder-closed"
+          ><span class="isim">Dosya6</span></i
+        ></a
+      >
+      <a href="http://127.0.0.1:5500/ethem%20copy%202.html">
+        <i class="fa-solid fa-folder-closed"
+          ><span class="isim">Dosya7</span></i
+        ></a
+      >
+      <a href="http://127.0.0.1:5500/ethem.html">
+        <i class="fa-solid fa-folder-open"
+          ><span class="isim">Dosya8</span></i
+        ></a
+      >
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="ilk">
+          <i class="fa-brands fa-windows"></i>
+          <div class="birles">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              placeholder="Aramak için buraya yazın"
+              url="https://www.google.com.tr/?hl=tr"
+            />
+          </div>
+          <i class="fa-solid fa-rectangle-list"></i>
+        </div>
+        <div class="renk">
+          <a href="http://127.0.0.1:5500/ethem%20copy%203.html">
+            <img src="images/folder.png" alt=""
+          /></a>
+          <a href="https://www.google.com.tr/?hl=tr">
+            <img src="images/chrome.png" alt=""
+          /></a>
+          <a href="https://slack.com/"> <img src="images/slack.png" alt="" /></a>
+          <a href="https://code.visualstudio.com/">
+            <img src="images/vscode.png" alt=""
+          /></a>
+        </div>
+        <div class="son">
+          <i class="fa-solid fa-angle-up"></i>
+          <i class="fa-solid fa-microphone"></i>
+          <i class="fa-solid fa-battery-three-quarters"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-volume-high"></i>
+          <i class="fa-solid fa-message" onclick="menuToggle">
+            <div class="yan"></div>
+          </i>
+          <i class="far fa-comment-alt"></i>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let menuToggle = document.querySelector(".fa-message");
+      menuToggle.onclick = function () {
+        menuToggle.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
