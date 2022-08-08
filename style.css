@@ -67,6 +67,7 @@ body {
 }
 
 footer .footer .ilk {
+  width: 33%;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -106,11 +107,12 @@ footer .footer .ilk i:hover:not(.fa-search) {
 }
 
 footer .footer .renk {
-  width: 100%;
+  width: 33%;
   align-items: center;
   display: flex;
   gap: 20px;
   padding-left: 10px;
+  margin-left: -150px;
   height: 38px;
   overflow: hidden;
 }
@@ -127,7 +129,7 @@ footer .footer .renk a:hover {
 }
 
 footer .footer .son {
-  width: calc(100% - 58%);
+  width: 38%;
   padding-left: 305px;
   align-items: center;
   justify-content: center;
@@ -146,6 +148,7 @@ footer .footer .son .fa-comment-alt {
   position: absolute;
   right: 0px;
   background-color: #134f6b;
+  /* visibility: hidden; */
 }
 .fa-message {
   z-index: 10;
@@ -172,4 +175,29 @@ footer .footer .son .fa-comment-alt {
   visibility: visible;
 }
 
+.fa-message.active .fa-comment-alt{
+  visibility: visible;
+  
+
+}
+
 /* FOOTER END */
+@media screen and (max-width:1082px){
+  .footer .renk a{
+    display: none;}
+}
+
+
+@media screen and (max-width:800px){
+  .footer .renk a{
+    display: none;}
+    .footer .son{
+      right: 100px;
+
+    }
+    .footer .son .fa-comment-alt{
+      margin-right: -103px;
+
+    }
+  }
+
