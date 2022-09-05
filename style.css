@@ -8,7 +8,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   background-size: cover;
   overflow: hidden;
 }
@@ -19,14 +19,22 @@ body {
   width: 100%;
   height: 94%;
   background-color: rgba(122, 125, 144, 0.4);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* gap: 1rem; */
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(12,1fr);
+  /* display: flex; */
+  /* flex-direction:column;
+  align-items: left;
+  justify-content: left; */
   flex-wrap: wrap;
   position: relative;
 }
 .folder a {
-  height: 50px;
-  width: 50px;
+  /* border: 1px solid red; */
+  display: inline;
+  /* height: 50px;
+  width: 50px; */
 }
 .folder .fa-solid {
   position: relative;
